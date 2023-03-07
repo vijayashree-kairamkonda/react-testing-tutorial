@@ -5,12 +5,18 @@ export const Application = () => {
       <h2>Section 1</h2>
       <p>All fields are mandatory</p>
       <span title="close">X</span>
-      <img src="https://via.placeholder.com/150" alt="a person with laptop"/>
+      <img src="https://via.placeholder.com/150" alt="a person with laptop" />
       <div data-testid="custom-element">Custome HTML element</div>
       <form>
         <div>
           <label htmlFor="name">Name </label>
-          <input type="text" id="name" placeholder="Fullname" value="vj" onChange={()=>{}}/>
+          <input
+            type="text"
+            id="name"
+            placeholder="Fullname"
+            value="vj"
+            onChange={() => {}}
+          />
         </div>
         <div>
           <label htmlFor="bio">Bio </label>
@@ -33,7 +39,7 @@ export const Application = () => {
             conditions
           </label>
         </div>
-        <button>Submit</button>
+        <button disabled>Submit</button>
       </form>
     </>
   );

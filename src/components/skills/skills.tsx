@@ -4,11 +4,11 @@ import { SkillProps } from "./skills.types";
 export const Skills = ({ skills }: SkillProps) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-useEffect(()=>{
-    setTimeout(()=>{
-        setIsLoggedIn(true)
-    },1001)
-},[])
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoggedIn(true);
+    }, 1001);
+  }, []);
 
   return (
     <>
@@ -17,7 +17,11 @@ useEffect(()=>{
           return <li key={skill}>{skill}</li>;
         })}
       </ul>
-      {isLoggedIn ? <button>Start learning</button> : <button onClick={()=>setIsLoggedIn(true)}>Login</button>}
+      {isLoggedIn ? (
+        <button>Start learning</button>
+      ) : (
+        <button onClick={() => setIsLoggedIn(true)}>Login</button>
+      )}
     </>
   );
 };

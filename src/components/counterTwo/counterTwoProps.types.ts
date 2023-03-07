@@ -1,5 +1,5 @@
 export type counterTwoProps = {
-    count : number;
-    handleIncrement? :()=>void;
-    handleDecrement? :()=>void;
-}
+  count: number;
+  handleIncrement?: () => void;
+  handleDecrement?: () => void;
+};

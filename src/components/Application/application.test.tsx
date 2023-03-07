@@ -1,5 +1,4 @@
 import { render, screen } from "@testing-library/react";
-import exp from "constants";
 import { Application } from "./application";
 
 describe("Application", () => {
@@ -67,5 +66,6 @@ describe("Application", () => {
 
     const submitbtnElement = screen.getByRole("button");
     expect(submitbtnElement).toBeInTheDocument();
+    expect(submitbtnElement).toBeDisabled();
   });
 });
